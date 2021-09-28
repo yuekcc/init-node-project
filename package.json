@@ -6,16 +6,10 @@
     "init-node-project": "index.js"
   },
   "scripts": {
-    "commit": "cz",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "yuekcc",
   "license": "MIT",
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  },
   "prettier": {
     "printWidth": 120,
     "semi": true,
@@ -42,8 +36,6 @@
     ]
   },
   "devDependencies": {
-    "commitizen": "^4.2.4",
-    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
