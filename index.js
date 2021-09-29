@@ -25,7 +25,7 @@ function addPackageJson() {
 
   delete packageTemplate.bin;
 
-  const content = JSON.stringify(packageTemplate, null, 2);
+  const content = JSON.stringify(packageTemplate, (k, v) => k.startsWith('_') ? undefined : v, 2);
 
   return writeFile('package.json', content);
 }
